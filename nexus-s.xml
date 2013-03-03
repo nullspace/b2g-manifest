@@ -11,6 +11,8 @@
 	  fetch="git://github.com/mozilla/" />
   <remote name="mozillaorg" 
       fetch="https://git.mozilla.org/releases" />
+  <remote name="lissyx" 
+	  fetch="git://github.com/lissyx/" />
   <default revision="refs/tags/android-4.0.4_r1.2"
            remote="linaro"
            sync-j="4" />
@@ -20,8 +22,8 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
-  <project path="gaia" name="gaia.git" remote="mozillaorg" revision="master" />
-  <project path="gecko" name="gecko.git" remote="mozillaorg" revision="master" />
+  <project path="gaia" name="gaia.git" remote="lissyx" revision="master" />
+  <project path="gecko" name="mozilla-central.git" remote="lissyx" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
   <project path="external/moztt" name="moztt" remote="b2g" revision="master" />
@@ -97,7 +99,7 @@
   <project path="system/vold" name="platform/system/vold" />
 
   <!-- Nexus S specific things -->
-  <project path="device/samsung/crespo" name="android-device-crespo" remote="b2g" revision="master" />
+  <project path="device/samsung/crespo" name="android-device-crespo" remote="lissyx" revision="master" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
 
 </manifest>
